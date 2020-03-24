@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1050259521050",
+    "firebase_url": "https://covibeer-f3e91.firebaseio.com",
+    "project_id": "covibeer-f3e91",
+    "storage_bucket": "covibeer-f3e91.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1050259521050:android:488029a92366914d939ba3",
+        "android_client_info": {
+          "package_name": "fr.esilv2020.moneyroom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1050259521050-risfterb1uvq1ue5hj52fsa1dul6iuo0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVA3IRZ4I9P5nBUfNnEga6Z1Rqs2aJne4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1050259521050-risfterb1uvq1ue5hj52fsa1dul6iuo0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

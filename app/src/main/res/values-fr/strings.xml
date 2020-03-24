@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CoviBeer</string>
+    <string name="access">Informations</string>
+    <string name="password">Mot de passe</string>
+    <string name="identifiant">identifiant</string>
+    <string name="connexion">Connexion</string>
+    <string name="inscription">Inscription</string>
+    <string name="world">Monde:</string>
+    <string name="gu_ris">Guéris:</string>
+    <string name="morts">Morts:</string>
+    <string name="malades">Malades:</string>
+    <string name="home">Accueil</string>
+    <string name="sign_up">Inscription</string>
+    <string name="submit">soumettre</string>
+    <string name="you_are_logged_in">Connexion réussie !</string>
+    <string name="log_out">Déconnexion</string>
+    <string name="navHome">Home</string>
+    <string name="navMap">Carte</string>
+    <string name="navHealth">Santé</string>
+    <string name="item_default_name">Error_Name</string>
+    <string name="txthealth">Santé</string>
+</resources>
