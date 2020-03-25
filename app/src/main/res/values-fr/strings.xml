@@ -20,4 +20,19 @@
     <string name="navHealth">Santé</string>
     <string name="item_default_name">Error_Name</string>
     <string name="txthealth">Santé</string>
+    <string name="medical_report">Fiche médicale</string>
+    <string name="first_name">Prénom</string>
+    <string name="validate">Valider</string>
+    <string name="weight">Poids</string>
+    <string name="height">Taille</string>
+    <string name="age">Age</string>
+    <string name="name">Nom</string>
+    <string name="symptoms_check">Symptomes</string>
+    <string name="nez">écoulement nasal</string>
+    <string name="gorge">Mal de gorge/toux</string>
+    <string name="fievre">Fievre</string>
+    <string name="respire">Difficultés respiratoires</string>
+    <string name="national_insurance_number">numero securite sociale</string>
+    <string name="attach_my_medical_report">Envoyer mon dossier medical</string>
+    <string name="ask_for_a_rendez_vous">Demande de rendez-vous</string>
 </resources>

@@ -1,11 +1,14 @@
 package fr.esilv2020.moneyroom;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -16,6 +19,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class HomeFragment extends Fragment {
     Button btnLogout;
 
+    TextView name;
 
     @Nullable
     @Override
@@ -23,7 +27,8 @@ public class HomeFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        btnLogout = (Button) view.findViewById(R.id.btnLogout);
+
+        btnLogout = (Button) view.findViewById(R.id.home);
 
        btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override

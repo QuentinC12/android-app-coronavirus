@@ -32,4 +32,19 @@
     <string name="navHealth">Health</string>
     <string name="item_default_name">Error_Name</string>
     <string name="txthealth">Health</string>
+    <string name="medical_report">Medical report</string>
+    <string name="first_name">First name</string>
+    <string name="validate">validate</string>
+    <string name="weight">Weight</string>
+    <string name="height">height</string>
+    <string name="age">age</string>
+    <string name="name">Name</string>
+    <string name="symptoms_check">Symptoms check</string>
+    <string name="nez">runny nose</string>
+    <string name="gorge">Sore throats/cough</string>
+    <string name="fievre">Fever</string>
+    <string name="respire">Breathing difficulties</string>
+    <string name="national_insurance_number">National Insurance Number</string>
+    <string name="attach_my_medical_report">Attach my medical Report</string>
+    <string name="ask_for_a_rendez_vous">Ask for a rendez vous</string>
 </resources>

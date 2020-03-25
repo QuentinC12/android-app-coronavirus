@@ -2,11 +2,14 @@ package fr.esilv2020.moneyroom;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -24,7 +27,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class mainScreen extends AppCompatActivity {
 
     private static final String TAG = "mainScreen";
-
+    private Button btnHome;
     private TextView globalStats;
     private ImageView covImg;
     private ListView countriesStats;
@@ -36,16 +39,23 @@ public class mainScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_screen);
         Log.d(TAG, "onCreate: Started");
-
+        btnHome = (Button) findViewById(R.id.infohome);
         globalStats = (TextView) findViewById(R.id.globalStats);
         covImg = (ImageView) findViewById(R.id.covImg);
         countriesStats = (ListView) findViewById(R.id.countryStats);
         searchCountries = (EditText) findViewById(R.id.searchCountry);
-
-//        int imageResource = getResources().getIdentifier("@drawable/covid19", null, this.getPackageName());
-//        covImg.setImageResource(imageResource);
+        btnHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent main = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(main);
+                finish();
+            }
+        });
+        int imageResource = getResources().getIdentifier("@drawable/covid19", null, this.getPackageName());
+        covImg.setImageResource(imageResource);
 
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://coronavirus-19-api.herokuapp.com/")
@@ -78,7 +88,7 @@ public class mainScreen extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<Total> call, Throwable t) {
-                globalStats.setText(t.getMessage() + "\n\n");
+                globalStats.append(t.getMessage() + "\n\n");
             }
         });
 
@@ -109,7 +119,7 @@ public class mainScreen extends AppCompatActivity {
                     content += "Case per one million: " + post.getCasesPerOneMillion() + "\n\n\n";
 
                     data.add(content);
-                   // listViewModifs(data);
+                    listViewModifs(data);
                 }
 
             }
